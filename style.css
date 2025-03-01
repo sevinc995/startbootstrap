@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  padding: 20px 0;
+  padding: 25px 0;
   background-color: black;
 }
 header .imgbox {
@@ -41,7 +41,6 @@ header nav a:hover {
   background-position: center;
 }
 #welcome .box {
-  max-height: 650px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,16 +50,15 @@ header nav a:hover {
 #welcome .box .textbox {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 #welcome .box .textbox h1 {
   font-weight: 700;
   font-size: 110px;
   color: white;
+  margin-top: 20px;
 }
 #welcome .box .textbox h2 {
-  padding-top: 135px;
+  margin-top: 135px;
   font-weight: 600;
   font-size: 40px;
   color: white;
@@ -83,4 +81,31 @@ header nav a:hover {
 }
 #welcome .box .btn h3:hover {
   cursor: pointer;
+}
+@media (min-width: 300px) {
+  #welcome .box .textbox h1 {
+    font-size: 40px;
+  }
+  #welcome .box .textbox h2 {
+    margin-top: 110px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 576px) {
+  #welcome .box .textbox h1 {
+    font-size: 60px;
+  }
+  #welcome .box .textbox h2 {
+    margin-top: 130px;
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  #welcome .box .textbox h1 {
+    font-size: 110px;
+  }
+  #welcome .box .textbox h2 {
+    margin-top: 135px;
+    font-size: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
