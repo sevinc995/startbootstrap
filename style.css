@@ -17,16 +17,65 @@ header {
 header .imgbox {
   width: 150px;
 }
+header .imgbox img:hover {
+  cursor: pointer;
+}
 header nav a {
   font-size: 17px;
   font-weight: 600;
   color: #8b8b8e;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 header nav a:hover {
   color: #927717;
 }
 
 #welcome {
-  background-image: url("header-backg.png");
+  background-image: url("assets/header-backg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#welcome .box {
+  max-height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+#welcome .box .textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#welcome .box .textbox h1 {
+  font-weight: 700;
+  font-size: 110px;
+  color: white;
+}
+#welcome .box .textbox h2 {
+  padding-top: 135px;
+  font-weight: 600;
+  font-size: 40px;
+  color: white;
+}
+#welcome .box .btn {
+  width: 210px;
+  padding: 18px 45px;
+  background-color: #ffc800;
+  border-radius: 7px;
+  margin: 70px;
+}
+#welcome .box .btn:hover {
+  background-color: #d9aa00;
+  cursor: pointer;
+}
+#welcome .box .btn h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+#welcome .box .btn h3:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
