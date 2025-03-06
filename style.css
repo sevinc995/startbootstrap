@@ -108,4 +108,10 @@ header nav a:hover {
     margin-top: 135px;
     font-size: 40px;
   }
+}
+
+#services .textbox h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
