@@ -15,23 +15,26 @@
             font-size: 28px
             font-weight: 700
             text-align: center
-            margin: 15px
-
+            margin: 15p
     .box
-        //width: 280.98px
-        //height: 212.98px
-        position: relative
         .imgbox
             margin: 3px
+            position: relative
             .minibox
-                background-color: yellow
-                position: absolute
-                top: 10px
-                opacity: 0.5
                 .icon
+                    opacity: 0
+            &:hover
+                .minibox
+                    background-color: #f8cb09
                     position: absolute
-                    top: 130px
-                    left: 150px
-                    font-size: 50px
-                    color: #ffff
-                    //display: none
+                    top: 0
+                    opacity: 0.9
+                    .icon
+                        position: absolute
+                        top: 100px
+                        left: 150px
+                        font-size: 60px
+                        color: #ffff
+                        opacity: 1
+                        //display: none
+               
