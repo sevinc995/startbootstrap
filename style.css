@@ -3,17 +3,14 @@ body {
   font-weight: 500;
 }
 
-.box {
-  overflow: hidden;
-}
-.box .minibox {
-  width: 100%;
-  height: 100%;
-}
 .box .imgbox {
+  width: 100%;
   overflow: hidden;
 }
-.box img {
+.box .imgbox img {
+  width: 100%;
+}
+.box .imgbox .minibox {
   width: 100%;
 }
 
@@ -183,18 +180,19 @@ header nav a:hover {
 #portfolio .box {
   position: relative;
 }
-#portfolio .box .minibox {
+#portfolio .box .imgbox {
+  margin: 3px;
+}
+#portfolio .box .imgbox .minibox {
   background-color: yellow;
   position: absolute;
   top: 10px;
+  opacity: 0.5;
 }
-#portfolio .box .icon {
+#portfolio .box .imgbox .minibox .icon {
   position: absolute;
   top: 130px;
   left: 150px;
   font-size: 50px;
   color: white;
-}
-#portfolio .box .imgbox {
-  margin: 3px;
 }/*# sourceMappingURL=style.css.map */
