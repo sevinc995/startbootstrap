@@ -86,22 +86,40 @@ header nav a:hover {
 #welcome .box .btn h3:hover {
   cursor: pointer;
 }
+@media (max-width: 300px) {
+  #welcome .box .textbox h1 {
+    font-size: 40px;
+  }
+  #welcome .box .textbox h2 {
+    margin-top: 120px;
+    font-size: 20px;
+  }
+}
 @media (min-width: 300px) {
   #welcome .box .textbox h1 {
     font-size: 40px;
   }
   #welcome .box .textbox h2 {
-    margin-top: 110px;
+    margin-top: 120px;
     font-size: 20px;
   }
 }
 @media (min-width: 576px) {
   #welcome .box .textbox h1 {
-    font-size: 60px;
+    font-size: 50px;
   }
   #welcome .box .textbox h2 {
     margin-top: 130px;
     font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  #welcome .box .textbox h1 {
+    font-size: 80px;
+  }
+  #welcome .box .textbox h2 {
+    margin-top: 130px;
+    font-size: 35px;
   }
 }
 @media (min-width: 992px) {
@@ -110,7 +128,7 @@ header nav a:hover {
   }
   #welcome .box .textbox h2 {
     margin-top: 135px;
-    font-size: 40px;
+    font-size: 45px;
   }
 }
 
@@ -155,6 +173,14 @@ header nav a:hover {
   color: white;
   font-size: 60px;
 }
+@media (max-width: 576px) {
+  #services .textbox h1 {
+    font-size: 34px;
+  }
+  #services .box h2 {
+    font-size: 19px;
+  }
+}
 
 #portfolio {
   padding: 80px;
@@ -163,19 +189,19 @@ header nav a:hover {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 #portfolio .textbox h3 {
   font-size: 18px;
   text-align: center;
   color: #9a9a9c;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 #portfolio .textbox h2 {
   font-size: 28px;
   font-weight: 700;
   text-align: center;
-  margin: 15p;
+  margin: 15px;
 }
 #portfolio .box .imgbox {
   margin: 3px;
@@ -185,7 +211,7 @@ header nav a:hover {
   opacity: 0;
 }
 #portfolio .box .imgbox:hover .minibox {
-  background-color: #f8cb09;
+  background-color: #fecc18;
   position: absolute;
   top: 0;
   opacity: 0.9;
@@ -197,4 +223,16 @@ header nav a:hover {
   font-size: 60px;
   color: white;
   opacity: 1;
+}
+#portfolio .box .imgbox:hover .box-color {
+  opacity: 0.6;
+}
+#portfolio .box .imgbox:hover .box-color .icon {
+  color: white;
+  opacity: 1;
+}
+@media (min-width: 576px) {
+  #portfolio .textbox h1 {
+    font-size: 35px;
+  }
 }/*# sourceMappingURL=style.css.map */
