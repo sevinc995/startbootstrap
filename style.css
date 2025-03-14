@@ -310,4 +310,10 @@ header nav a:hover {
   font-weight: 700;
   text-align: center;
   color: white;
+}
+@media (min-width: 567px) {
+  #about .box {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }/*# sourceMappingURL=style.css.map */
