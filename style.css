@@ -311,7 +311,7 @@ header nav a:hover {
   text-align: center;
   color: white;
 }
-@media (min-width: 567px) {
+@media (min-width: 300px) {
   #about .box {
     display: flex;
     flex-direction: row-reverse;
