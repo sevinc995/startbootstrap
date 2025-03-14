@@ -235,37 +235,4 @@ header nav a:hover {
   #portfolio .textbox h1 {
     font-size: 35px;
   }
-}
-
-#about {
-  padding: 80px;
-}
-#about h1 {
-  font-size: 40px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 20px;
-}
-#about h4 {
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 40px;
-  color: #9a9a9c;
-}
-#about .textbox {
-  padding: 20px;
-  width: 450px;
-}
-#about .textbox h2 {
-  font-size: 30px;
-  font-weight: 700;
-}
-#about .textbox h3 {
-  font-size: 20px;
-  color: #9a9a9c;
-}
-#about .imgbox {
-  border: 3px solid #9a9a9c;
-  border-radius: 50%;
-  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
