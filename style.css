@@ -8,6 +8,7 @@ body {
 }
 .box .imgbox img {
   width: 100%;
+  height: 100%;
 }
 .box .imgbox .minibox {
   width: 100%;
@@ -245,7 +246,7 @@ header nav a:hover {
   font-weight: 700;
   margin-bottom: 20px;
 }
-#about h4 {
+#about h3 {
   font-size: 20px;
   color: #9a9a9c;
 }
@@ -268,7 +269,7 @@ header nav a:hover {
   font-weight: 700;
   margin-bottom: 20px;
 }
-#about ul li .box .textbox h3 {
+#about ul li .box .textbox p {
   font-size: 20px;
   color: #9a9a9c;
 }
@@ -310,10 +311,4 @@ header nav a:hover {
   font-weight: 700;
   text-align: center;
   color: white;
-}
-@media (min-width: 300px) {
-  #about .box {
-    display: flex;
-    flex-direction: row-reverse;
-  }
 }/*# sourceMappingURL=style.css.map */
