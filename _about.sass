@@ -66,18 +66,20 @@
                     font-weight: 700
                     text-align: center
                     color: #ffff
-    @media (max-width: 567px)
+    @media (max-width: 300px)
+        h1
+            font-size: 30px
+        h3
+            font-size: 15px
         ul
             li
                 display: flex
                 justify-content: start
                 .box
-                    // display: flex
-                    // flex-direction: row-reverse
                     position: relative
-                    padding: 40px
+                    padding: 0px
                     .textbox
-                        width: 150px
+                        width: 180px
                         h2
                             font-size: 20px
                             text-align: start
@@ -86,23 +88,82 @@
                             line-height: 1.2
                             text-align: start
                     .imgbox
-                        width: 60px
-                        height: 60px
+                        width: 65px
+                        height: 65px
                     .vertical
                         position: absolute
-                        top: 120px
-                        left: 110px
-                        height: 340px
+                        top: 90px
+                        left: 70px
+                        height: 200px
                 .left
                     display: flex
                     flex-direction: row-reverse
-                    transform: translate(-50px, 0px)
+                    transform: translate(-130px, 0px)
                 .right
-                    transform: translate(-50px, 0px)
+                    transform: translate(-130px, 0px)
                 .minibox
-                    width: 60px
-                    height: 60px
-                    margin: 30px
+                    width: 65px
+                    height: 65px
+                    margin: 20px
+                    transform: translate(-110px, 0px)
                     h4
                         font-size: 10px
                         font-weight: 600
+    @media (max-width: 576px)
+        h1
+            font-size: 35px
+        h3
+            font-size: 18px
+        ul
+            li
+                display: flex
+                justify-content: center
+                .box
+                    position: relative
+                    display: flex
+                    flex-direction: row
+                    padding: 30px
+                    .textbox
+                        margin-top: 20px
+                        width: 200px
+                        h2
+                            font-size: 25px
+                            font-weight: 700
+                    .imgbox
+                        width: 80px
+                        height: 80px
+                    .vertical
+                        position: absolute
+                        top: 70px
+                        left: 310px
+                    .right-line
+                        position: absolute
+                        top: 100px
+                        left: 110px
+                .left
+                    transform: translate(-100px, 0px)
+                .right
+                    transform: translate(100px, 0px)
+                .minibox
+                    width: 80px
+                    height: 80px
+                    h4
+                        font-size: 17px
+                        font-weight: 700
+    @media (max-width: 786px)
+        h1
+            font-size: 40px
+            font-weight: 700
+            margin-bottom: 20px
+        h3
+            font-size: 20px
+        ul
+            li
+                display: flex
+                justify-content: center
+                .box
+                    position: relative
+                    display: flex
+                    flex-direction: row
+                    padding: 30px
+                    
