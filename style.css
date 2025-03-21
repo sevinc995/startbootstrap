@@ -135,7 +135,7 @@ header nav a:hover {
   }
   #about ul li .box {
     position: relative;
-    padding: 0px;
+    padding: 20px;
   }
   #about ul li .box .textbox {
     width: 180px;
@@ -156,8 +156,8 @@ header nav a:hover {
   #about ul li .box .vertical {
     position: absolute;
     top: 90px;
-    left: 70px;
-    height: 200px;
+    left: 90px;
+    height: 400px;
   }
   #about ul li .left {
     display: flex;
@@ -178,7 +178,63 @@ header nav a:hover {
     font-weight: 600;
   }
 }
-@media (max-width: 576px) {
+@media (min-width: 300px) {
+  #about h1 {
+    font-size: 30px;
+  }
+  #about h3 {
+    font-size: 15px;
+  }
+  #about ul li {
+    display: flex;
+    justify-content: start;
+  }
+  #about ul li .box {
+    position: relative;
+    padding: 20px;
+  }
+  #about ul li .box .textbox {
+    width: 180px;
+  }
+  #about ul li .box .textbox h2 {
+    font-size: 20px;
+    text-align: start;
+  }
+  #about ul li .box .textbox p {
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: start;
+  }
+  #about ul li .box .imgbox {
+    width: 65px;
+    height: 65px;
+  }
+  #about ul li .box .vertical {
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    height: 400px;
+  }
+  #about ul li .left {
+    display: flex;
+    flex-direction: row-reverse;
+    transform: translate(-130px, 0px);
+  }
+  #about ul li .right {
+    transform: translate(-130px, 0px);
+  }
+  #about ul li .minibox {
+    width: 65px;
+    height: 65px;
+    margin: 20px;
+    transform: translate(-110px, 0px);
+  }
+  #about ul li .minibox h4 {
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 576px) {
   #about h1 {
     font-size: 35px;
   }
@@ -186,6 +242,7 @@ header nav a:hover {
     font-size: 18px;
   }
   #about ul li {
+    position: relative;
     display: flex;
     justify-content: center;
   }
@@ -193,7 +250,6 @@ header nav a:hover {
     position: relative;
     display: flex;
     flex-direction: row;
-    padding: 30px;
   }
   #about ul li .box .textbox {
     margin-top: 20px;
@@ -210,45 +266,38 @@ header nav a:hover {
   #about ul li .box .vertical {
     position: absolute;
     top: 70px;
-    left: 310px;
+    left: 300px;
+    height: 400px;
   }
   #about ul li .box .right-line {
     position: absolute;
     top: 100px;
-    left: 110px;
+    left: 100px;
   }
   #about ul li .left {
     transform: translate(-100px, 0px);
   }
+  #about ul li .left .textbox h2 {
+    text-align: end;
+  }
+  #about ul li .left .textbox p {
+    text-align: end;
+  }
   #about ul li .right {
     transform: translate(100px, 0px);
+  }
+  #about ul li .right .textbox {
+    text-align: start;
   }
   #about ul li .minibox {
     width: 80px;
     height: 80px;
+    position: absolute;
+    top: 150px;
+    left: 245px;
   }
   #about ul li .minibox h4 {
     font-size: 17px;
     font-weight: 700;
-  }
-}
-@media (max-width: 786px) {
-  #about h1 {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  #about h3 {
-    font-size: 20px;
-  }
-  #about ul li {
-    display: flex;
-    justify-content: center;
-  }
-  #about ul li .box {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    padding: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
