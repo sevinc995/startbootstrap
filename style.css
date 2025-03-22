@@ -53,6 +53,7 @@ header nav a:hover {
   color: #9a9a9c;
 }
 #about ul li {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -353,8 +354,8 @@ header nav a:hover {
     width: 100px;
     height: 100px;
     position: absolute;
-    top: 95px;
-    left: 325px;
+    top: 90px;
+    left: 335px;
   }
 }
 @media (min-width: 992px) {
@@ -412,7 +413,8 @@ header nav a:hover {
   #about ul li .minibox {
     width: 170px;
     height: 170px;
-    transform: translate(-5px, 0px);
+    position: absolute;
+    left: 430px;
   }
   #about ul li .minibox h4 {
     font-size: 23px;
