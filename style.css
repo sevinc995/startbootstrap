@@ -155,7 +155,7 @@ header nav a:hover {
     font-weight: 600;
   }
   #about ul li .vertical {
-    height: 1300px;
+    height: 1000px;
     position: absolute;
     top: 110px;
     left: -40px;
@@ -211,7 +211,7 @@ header nav a:hover {
     font-weight: 600;
   }
   #about ul li .vertical {
-    height: 1300px;
+    height: 1100px;
     position: absolute;
     top: 110px;
     left: -40px;
@@ -244,7 +244,7 @@ header nav a:hover {
   }
   #about ul li .box .textbox {
     margin-top: 20px;
-    width: 200px;
+    width: 180px;
   }
   #about ul li .box .textbox h2 {
     font-size: 25px;
@@ -254,52 +254,32 @@ header nav a:hover {
     width: 80px;
     height: 80px;
   }
+  #about ul li .minibox {
+    width: 80px;
+    height: 80px;
+    margin-left: -10px;
+  }
+  #about ul li .vertical {
+    height: 1200px;
+    transform: translate(230px, 0px);
+  }
+  #about ul li .left {
+    transform: translate(-95px, 0px);
+  }
+  #about ul li .left .textbox {
+    margin-right: -5;
+  }
   #about ul li .left .textbox h2 {
     text-align: end;
   }
   #about ul li .left .textbox p {
     text-align: end;
   }
+  #about ul li .right {
+    transform: translate(85px, 0px);
+  }
   #about ul li .right .textbox {
     text-align: start;
-  }
-}
-@media (min-width: 768px) {
-  #about h1 {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  #about h3 {
-    font-size: 20px;
-  }
-  #about ul li {
-    display: flex;
-    justify-content: center;
-  }
-  #about ul li .box {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    padding: 40px;
-  }
-  #about ul li .box .textbox {
-    margin-top: 20px;
-    width: 200px;
-  }
-  #about ul li .box .textbox h2 {
-    font-size: 27px;
-    font-weight: 700;
-  }
-  #about ul li .box .textbox p {
-    font-size: 20px;
-    color: #9a9a9c;
-    line-height: 1.4;
-    margin-top: 20px;
-  }
-  #about ul li .box .imgbox {
-    width: 100px;
-    height: 100px;
   }
 }
 @media (min-width: 992px) {
