@@ -1,49 +1,69 @@
-// #portfolio
-//     padding: 80px
-//     .textbox
-//         h1
-//             font-size: 40px
-//             font-weight: 700
-//             text-align: center
-//             margin-bottom: 30px
-//         h3
-//             font-size: 18px
-//             text-align: center
-//             color: #9a9a9c
-//             margin-bottom: 25px
-//         h2
-//             font-size: 28px
-//             font-weight: 700
-//             text-align: center
-//             margin: 15px
+#portfolio
+    padding: 80px 0
+    .textbox
+        h1
+            font-size: 40px
+            font-weight: 700
+            text-align: center
+            margin-bottom: 30px
+        h3
+            font-size: 18px
+            text-align: center
+            color: #9a9a9c
+            margin-bottom: 25px
+        h2
+            font-size: 28px
+            font-weight: 700
+            text-align: center
+            margin: 15px
 
-//     .box
-//         .imgbox
-//             margin: 3px
-//             position: relative
-//             .minibox
-//                 .icon
-//                     opacity: 0
-//             &:hover
-//                 .minibox
-//                     background-color: #fecc18
-//                     position: absolute
-//                     top: 0
-//                     opacity: 0.9
-//                     .icon
-//                         position: absolute
-//                         top: 100px
-//                         left: 150px
-//                         font-size: 60px
-//                         color: #ffff
-//                         opacity: 1
-//                 .box-color
-//                     opacity: 0.6
-//                     .icon
-//                         color: #ffff
-//                         opacity: 1
+    .box
+        .imgbox
+            width: 340px
+            margin: 3px
+            position: relative
+            .minibox
+                .icon
+                    opacity: 0
+            &:hover
+                .minibox
+                    background-color: #fecc18
+                    position: absolute
+                    top: 0
+                    opacity: 0.9
+                    .icon
+                        position: absolute
+                        top: 100px
+                        left: 150px
+                        font-size: 60px
+                        color: #ffff
+                        opacity: 1
+                .box-color
+                    opacity: 0.6
+                    .icon
+                        color: #ffff
+                        opacity: 1
 
-//     @media (min-width: 576px)
-//         .textbox
-//             h1
-//                 font-size: 35px
+    @media (max-width: 300px)
+        .box
+            .imgbox
+                width: 330px
+    @media (min-width: 300px)
+        .box
+            .imgbox
+                width: 330px
+    @media (max-width: 576px)
+        .textbox
+            h1
+                font-size: 35px
+        .box
+            .imgbox
+                width: 330px
+    @media (max-width: 786px)
+        .box
+            .imgbox
+                width: 330px
+    @media (max-width: 992px)
+        .box
+            .imgbox
+                width: 300px

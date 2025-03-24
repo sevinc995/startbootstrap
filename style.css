@@ -40,6 +40,228 @@ header nav a:hover {
   }
 }
 
+#welcome {
+  background-image: url("assets/header-backg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#welcome .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+#welcome .box .textbox {
+  display: flex;
+  flex-direction: column;
+}
+#welcome .box .textbox h1 {
+  font-weight: 700;
+  font-size: 110px;
+  color: white;
+  margin-top: 20px;
+}
+#welcome .box .textbox h2 {
+  margin-top: 135px;
+  font-weight: 600;
+  font-size: 40px;
+  color: white;
+}
+#welcome .box .btn {
+  width: 210px;
+  padding: 18px 45px;
+  background-color: #ffc800;
+  border-radius: 7px;
+  margin: 70px;
+}
+#welcome .box .btn:hover {
+  background-color: #d9aa00;
+  cursor: pointer;
+}
+#welcome .box .btn h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+#welcome .box .btn h3:hover {
+  cursor: pointer;
+}
+@media (max-width: 300px) {
+  #welcome .box .textbox h1 {
+    font-size: 40px;
+  }
+  #welcome .box .textbox h2 {
+    margin-top: 120px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 300px) {
+  #welcome .box .textbox h1 {
+    font-size: 40px;
+  }
+  #welcome .box .textbox h2 {
+    margin-top: 120px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 576px) {
+  #welcome .box .textbox h1 {
+    font-size: 50px;
+  }
+  #welcome .box .textbox h2 {
+    margin-top: 130px;
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  #welcome .box .textbox h1 {
+    font-size: 80px;
+  }
+  #welcome .box .textbox h2 {
+    margin-top: 130px;
+    font-size: 35px;
+  }
+}
+@media (min-width: 992px) {
+  #welcome .box .textbox h1 {
+    font-size: 110px;
+  }
+  #welcome .box .textbox h2 {
+    margin-top: 135px;
+    font-size: 45px;
+  }
+}
+
+#services {
+  padding: 80px;
+}
+#services .textbox h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+#services .textbox h3 {
+  text-align: center;
+  font-size: 18px;
+  color: #9a9a9c;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+#services .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#services .box h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px;
+}
+#services .box .icon {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #ffc800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#services .box .icon i {
+  color: white;
+  font-size: 60px;
+}
+@media (max-width: 576px) {
+  #services .textbox h1 {
+    font-size: 34px;
+  }
+  #services .box h2 {
+    font-size: 19px;
+  }
+}
+
+#portfolio {
+  padding: 80px 0;
+}
+#portfolio .textbox h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#portfolio .textbox h3 {
+  font-size: 18px;
+  text-align: center;
+  color: #9a9a9c;
+  margin-bottom: 25px;
+}
+#portfolio .textbox h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin: 15px;
+}
+#portfolio .box .imgbox {
+  width: 340px;
+  margin: 3px;
+  position: relative;
+}
+#portfolio .box .imgbox .minibox .icon {
+  opacity: 0;
+}
+#portfolio .box .imgbox:hover .minibox {
+  background-color: #fecc18;
+  position: absolute;
+  top: 0;
+  opacity: 0.9;
+}
+#portfolio .box .imgbox:hover .minibox .icon {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  font-size: 60px;
+  color: white;
+  opacity: 1;
+}
+#portfolio .box .imgbox:hover .box-color {
+  opacity: 0.6;
+}
+#portfolio .box .imgbox:hover .box-color .icon {
+  color: white;
+  opacity: 1;
+}
+@media (max-width: 300px) {
+  #portfolio .box .imgbox {
+    width: 330px;
+  }
+}
+@media (min-width: 300px) {
+  #portfolio .box .imgbox {
+    width: 330px;
+  }
+}
+@media (max-width: 576px) {
+  #portfolio .textbox h1 {
+    font-size: 35px;
+  }
+  #portfolio .box .imgbox {
+    width: 330px;
+  }
+}
+@media (max-width: 786px) {
+  #portfolio .box .imgbox {
+    width: 330px;
+  }
+}
+@media (max-width: 992px) {
+  #portfolio .box .imgbox {
+    width: 300px;
+  }
+}
+
 #about {
   padding: 80px;
 }
@@ -99,14 +321,6 @@ header nav a:hover {
   text-align: center;
   color: white;
 }
-#about ul li .vertical {
-  width: 3px;
-  height: 1500px;
-  background-color: #edeff2;
-  position: absolute;
-  top: 120px;
-  z-index: -1;
-}
 #about ul li .left {
   transform: translate(-175px, 0px);
 }
@@ -154,12 +368,6 @@ header nav a:hover {
     font-size: 13px;
     font-weight: 600;
   }
-  #about ul li .vertical {
-    height: 1000px;
-    position: absolute;
-    top: 110px;
-    left: -40px;
-  }
   #about ul li .left {
     display: flex;
     flex-direction: row-reverse;
@@ -189,12 +397,13 @@ header nav a:hover {
     width: 180px;
   }
   #about ul li .box .textbox h2 {
-    font-size: 20px;
+    font-size: 23px;
     text-align: start;
+    line-height: 1.3;
   }
   #about ul li .box .textbox p {
-    font-size: 15px;
-    line-height: 1.2;
+    font-size: 17px;
+    line-height: 1.3;
     text-align: start;
   }
   #about ul li .box .imgbox {
@@ -209,12 +418,6 @@ header nav a:hover {
   #about ul li .minibox h4 {
     font-size: 13px;
     font-weight: 600;
-  }
-  #about ul li .vertical {
-    height: 1100px;
-    position: absolute;
-    top: 110px;
-    left: -40px;
   }
   #about ul li .left {
     display: flex;
@@ -250,6 +453,10 @@ header nav a:hover {
     font-size: 25px;
     font-weight: 700;
   }
+  #about ul li .box .textbox p {
+    font-size: 17px;
+    line-height: 1.3;
+  }
   #about ul li .box .imgbox {
     width: 80px;
     height: 80px;
@@ -257,17 +464,13 @@ header nav a:hover {
   #about ul li .minibox {
     width: 80px;
     height: 80px;
-    transform: translate(30px, 0px);
-  }
-  #about ul li .vertical {
-    height: 1200px;
-    transform: translate(230px, 0px);
+    transform: translate(35px, 0px);
   }
   #about ul li .left {
-    transform: translate(-95px, 0px);
+    transform: translate(-80px, 0px);
   }
   #about ul li .left .textbox {
-    margin-right: -5;
+    margin-right: -10px;
   }
   #about ul li .left .textbox h2 {
     text-align: end;
@@ -276,9 +479,10 @@ header nav a:hover {
     text-align: end;
   }
   #about ul li .right {
-    transform: translate(85px, 0px);
+    transform: translate(90px, 0px);
   }
   #about ul li .right .textbox {
+    margin-left: -10px;
     text-align: start;
   }
 }
@@ -318,10 +522,6 @@ header nav a:hover {
   #about ul li .box .imgbox {
     width: 100px;
     height: 100px;
-  }
-  #about ul li .vertical {
-    height: 1500px;
-    transform: translate(330px, 0px);
   }
   #about ul li .minibox {
     width: 100px;
@@ -372,5 +572,20 @@ header nav a:hover {
   #about ul li .box .imgbox {
     width: 170px;
     height: 170px;
+  }
+  #about ul li .minibox {
+    width: 170px;
+    height: 170px;
+    transform: translate(40px, 0px);
+  }
+  #about ul li .minibox h4 {
+    font-size: 23px;
+    font-weight: 700;
+  }
+  #about ul li .left {
+    transform: translate(-165px, 0px);
+  }
+  #about ul li .right {
+    transform: translate(185px, 0px);
   }
 }/*# sourceMappingURL=style.css.map */

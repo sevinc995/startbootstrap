@@ -47,13 +47,13 @@
                     font-weight: 700
                     text-align: center
                     color: #ffff
-            .vertical
-                width: 3px
-                height: 1500px
-                background-color: #edeff2
-                position: absolute
-                top: 120px
-                z-index: -1
+            // .vertical
+            //     width: 3px
+            //     height: 1500px
+            //     background-color: #edeff2
+            //     position: absolute
+            //     top: 120px
+            //     z-index: -1
             .left
                 transform: translate(-175px, 0px)
             .right
@@ -91,11 +91,11 @@
                     h4
                         font-size: 13px
                         font-weight: 600
-                .vertical
-                    height: 1000px
-                    position: absolute
-                    top: 110px
-                    left: -40px
+                // .vertical
+                //     height: 1000px
+                //     position: absolute
+                //     top: 110px
+                //     left: -40px
                 .left
                     display: flex
                     flex-direction: row-reverse
@@ -118,11 +118,12 @@
                     .textbox
                         width: 180px
                         h2
-                            font-size: 20px
+                            font-size: 23px
                             text-align: start
+                            line-height: 1.3
                         p
-                            font-size: 15px
-                            line-height: 1.2
+                            font-size: 17px
+                            line-height: 1.3
                             text-align: start
                     .imgbox
                         width: 65px
@@ -134,11 +135,11 @@
                     h4
                         font-size: 13px
                         font-weight: 600
-                .vertical
-                    height: 1100px
-                    position: absolute
-                    top: 110px
-                    left: -40px
+                // .vertical
+                //     height: 1100px
+                //     position: absolute
+                //     top: 110px
+                //     left: -40px
                 .left
                     display: flex
                     flex-direction: row-reverse
@@ -166,27 +167,31 @@
                         h2
                             font-size: 25px
                             font-weight: 700
+                        p
+                            font-size: 17px
+                            line-height: 1.3
                     .imgbox
                         width: 80px
                         height: 80px
                 .minibox
                     width: 80px
                     height: 80px
-                    transform: translate(30px, 0px)
-                .vertical
-                    height: 1200px
-                    transform: translate(230px, 0px)
+                    transform: translate(35px, 0px)
+                // .vertical
+                //     height: 1200px
+                //     transform: translate(230px, 0px)
                 .left
-                    transform: translate(-95px, 0px)
+                    transform: translate(-80px, 0px)
                     .textbox
-                        margin-right: -5
+                        margin-right: -10px
                         h2
                             text-align: end
                         p
                             text-align: end
                 .right
-                    transform: translate(85px, 0px)
+                    transform: translate(90px, 0px)
                     .textbox
+                        margin-left: -10px
                         text-align: start
 
     @media (min-width: 768px)
@@ -219,12 +224,12 @@
                     .imgbox
                         width: 100px
                         height: 100px
-                .vertical
-                    height: 1500px
+                //.vertical
+                    //height: 1500px
                     // position: absolute
                     // top: 100px
                     // left: 60px
-                    transform: translate(330px, 0px)
+                        transform: translate(330px, 0px)
                 .minibox
                     width: 100px
                     height: 100px
@@ -235,42 +240,49 @@
                     transform: translate(-125px, 0px)
                 .right
                     transform: translate(125px, 0px)
-    // @media (min-width: 992px)
-    //     h1
-    //         font-size: 40px
-    //         font-weight: 700
-    //         margin-bottom: 20px
-    //     h3
-    //         font-size: 20px
-    //         color: #9a9a9c
-    //     ul
-    //         li
-    //             display: flex
-    //             justify-content: center
-    //             .box
-    //                 position: relative
-    //                 display: flex
-    //                 flex-direction: row
-    //                 padding: 50px
-    //                 .textbox
-    //                     margin-top: 20px
-    //                     width: 350px
-    //                     h2
-    //                         font-size: 30px
-    //                         font-weight: 700
-    //                     p
-    //                         font-size: 20px
-    //                         color: #9a9a9c
-    //                 .imgbox
-    //                     width: 170px
-    //                     height: 170px
-                    // .vertical
-                    //     position: absolute
-                    //     top: 120px
-                    //     left: 520px
-                // .left
-                //     transform: translate(-150px, 0px)
-                // .right
-                //     transform: translate(200px, 0px)
+    @media (min-width: 992px)
+        h1
+            font-size: 40px
+            font-weight: 700
+            margin-bottom: 20px
+        h3
+            font-size: 20px
+            color: #9a9a9c
+        ul
+            li
+                display: flex
+                justify-content: center
+                .box
+                    position: relative
+                    display: flex
+                    flex-direction: row
+                    padding: 50px
+                    .textbox
+                        margin-top: 20px
+                        width: 350px
+                        h2
+                            font-size: 30px
+                            font-weight: 700
+                        p
+                            font-size: 20px
+                            color: #9a9a9c
+                    .imgbox
+                        width: 170px
+                        height: 170px
+                .minibox
+                    width: 170px
+                    height: 170px
+                    transform: translate(40px, 0px)
+                    h4
+                        font-size: 23px
+                        font-weight: 700
+                // .vertical
+                //     position: absolute
+                //     top: 120px
+                //     left: 520px
+                .left
+                    transform: translate(-165px, 0px)
+                .right
+                    transform: translate(185px, 0px)
 
     //miniboxu duzelt!
