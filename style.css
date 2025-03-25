@@ -668,7 +668,9 @@ header nav a:hover {
   margin-bottom: 20px;
   padding: 10px 20px;
 }
-#contact textarea {
+#contact .box textarea {
+  width: 550px;
+  height: 235px;
   border: 0.5px solid #a2a8ad;
   border-radius: 5px;
   padding: 20px 20px;
@@ -685,4 +687,74 @@ header nav a:hover {
   color: #b2b3b3;
   font-size: 20px;
   font-weight: 600;
+}
+@media (min-width: 300px) {
+  #contact .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact .box input {
+    width: 250px;
+  }
+  #contact .box textarea {
+    width: 250px;
+    height: 135px;
+  }
+}
+@media (min-width: 576px) {
+  #contact .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact .box input {
+    width: 300px;
+  }
+  #contact .box textarea {
+    width: 300px;
+    height: 160px;
+  }
+}
+@media (min-width: 768px) {
+  #contact .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact .box input {
+    width: 300px;
+  }
+  #contact .box textarea {
+    width: 300px;
+    height: 235px;
+  }
+}
+@media (min-width: 992px) {
+  #contact .box {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .box input {
+    width: 430px;
+    height: 65px;
+  }
+  #contact .box textarea {
+    width: 430px;
+    height: 235px;
+  }
+}
+@media (min-width: 1200px) {
+  #contact .box {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .box input {
+    width: 550px;
+    height: 65px;
+  }
+  #contact .box textarea {
+    width: 550px;
+    height: 235px;
+  }
 }/*# sourceMappingURL=style.css.map */
