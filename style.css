@@ -643,5 +643,46 @@ header nav a:hover {
 #contact {
   background-image: url("assets/map-backg.png");
   background-size: cover;
-  background-position: center;
+  padding: 90px 0;
+}
+#contact h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 25px;
+}
+#contact h3 {
+  font-size: 20px;
+  color: #5f6a6e;
+  margin-bottom: 50px;
+}
+#contact .box {
+  display: flex;
+  flex-direction: column;
+}
+#contact .box input {
+  width: 550px;
+  height: 65px;
+  border: 0.5px solid #a2a8ad;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+#contact textarea {
+  border: 0.5px solid #a2a8ad;
+  border-radius: 5px;
+  padding: 20px 20px;
+}
+#contact .btn {
+  margin-top: 30px;
+  width: 220px;
+  border-radius: 5px;
+  padding: 18px 40px;
+  background-color: #b28f0e;
+  opacity: 0.8;
+}
+#contact .btn h4 {
+  color: #b2b3b3;
+  font-size: 20px;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
