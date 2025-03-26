@@ -18,6 +18,11 @@ body {
 header {
   padding: 25px 0;
   background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
 header .imgbox {
   width: 150px;
@@ -211,10 +216,11 @@ header nav a:hover {
   opacity: 0;
 }
 #portfolio .box .imgbox:hover .minibox {
-  background-color: #fecc18;
+  background-color: #faca17;
   position: absolute;
   top: 0;
   opacity: 0.9;
+  cursor: pointer;
 }
 #portfolio .box .imgbox:hover .minibox .icon {
   position: absolute;
@@ -679,6 +685,9 @@ header nav a:hover {
   border-radius: 5px;
   padding: 20px 20px;
 }
+#contact .box textarea:hover {
+  cursor: n-resize;
+}
 #contact .btn {
   margin-top: 30px;
   width: 220px;
@@ -774,6 +783,16 @@ footer .box {
 footer .box h3 {
   padding: 25px;
   font-size: 17px;
+}
+footer .box h3:hover {
+  cursor: pointer;
+}
+footer .box h4 {
+  padding: 25px;
+  font-size: 17px;
+}
+footer .box h4:hover {
+  cursor: n-resize;
 }
 footer .box .icon i {
   width: 38px;
