@@ -1,25 +1,53 @@
 header
     padding: 25px 0
-    background-color: black
+    background-color: #212529
     position: fixed
     top: 0
     left: 0
     width: 100%
     z-index: 2
-    .imgbox
-        width: 150px
-        img
-            &:hover
-                cursor: pointer
-    nav
-        a
-            font-size: 17px
-            font-weight: 600
-            color: #8b8b8e
-            margin-left: 30px
-            &:hover
-                color: #927717
-
-    @media (max-width: 768px)
+    .menu
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .imgbox
+            width: 150px
+            img
+                &:hover
+                    cursor: pointer
         nav
+            display: block
+            a
+                font-size: 17px
+                font-weight: 600
+                color: #8b8b8e
+                margin-left: 30px
+                cursor: pointer
+                &:hover
+                    color: #927717
+        .btn
             display: none
+
+    @media (max-width: 992px)
+        .menu
+            width: 100%
+            nav
+                display: none
+            .btn
+                display: flex
+                border-radius: 7px
+                border: 1px solid #605e5e
+                padding: 7px 13px 7px 11px
+                h3
+                    color: #a5a2a2
+                    font-weight: 700
+                    font-size: 18px
+                    margin-right: 10px
+                .icon
+                    color: #afacac
+                    margin-top: 2px
+
+    @media (max-width: 300px)
+        .menu
+            display: flex
+            flex-flow: row-wrap

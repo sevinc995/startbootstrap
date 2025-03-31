@@ -17,31 +17,68 @@ body {
 
 header {
   padding: 25px 0;
-  background-color: black;
+  background-color: #212529;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 2;
 }
-header .imgbox {
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu .imgbox {
   width: 150px;
 }
-header .imgbox img:hover {
+header .menu .imgbox img:hover {
   cursor: pointer;
 }
-header nav a {
+header .menu nav {
+  display: block;
+}
+header .menu nav a {
   font-size: 17px;
   font-weight: 600;
   color: #8b8b8e;
   margin-left: 30px;
+  cursor: pointer;
 }
-header nav a:hover {
+header .menu nav a:hover {
   color: #927717;
 }
-@media (max-width: 768px) {
-  header nav {
+header .menu .btn {
+  display: none;
+}
+@media (max-width: 992px) {
+  header .menu {
+    width: 100%;
+  }
+  header .menu nav {
     display: none;
+  }
+  header .menu .btn {
+    display: flex;
+    border-radius: 7px;
+    border: 1px solid #605e5e;
+    padding: 7px 13px 7px 11px;
+  }
+  header .menu .btn h3 {
+    color: #a5a2a2;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  header .menu .btn .icon {
+    color: #afacac;
+    margin-top: 2px;
+  }
+}
+@media (max-width: 300px) {
+  header .menu {
+    display: flex;
+    flex-flow: row-wrap;
   }
 }
 
@@ -211,31 +248,27 @@ header nav a:hover {
 }
 #portfolio .box .imgbox {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#portfolio .box .imgbox .minibox .icon {
-  opacity: 0;
-}
-#portfolio .box .imgbox:hover .minibox {
-  background-color: #faca17;
+#portfolio .box .imgbox .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   position: absolute;
   top: 0;
-  opacity: 0.9;
-  cursor: pointer;
-}
-#portfolio .box .imgbox:hover .minibox .icon {
-  position: absolute;
-  top: 100px;
-  left: 150px;
+  left: 0;
+  bottom: 0;
   font-size: 60px;
   color: white;
-  opacity: 1;
+  opacity: 0;
 }
-#portfolio .box .imgbox:hover .box-color {
-  opacity: 0.6;
-}
-#portfolio .box .imgbox:hover .box-color .icon {
-  color: white;
-  opacity: 1;
+#portfolio .box .imgbox .icon:hover {
+  background-color: #ffbb00;
+  opacity: 0.9;
+  cursor: pointer;
 }
 @media (min-width: 576px) {
   #portfolio .textbox h1 {
@@ -686,7 +719,7 @@ header nav a:hover {
   padding: 20px 20px;
 }
 #contact .box textarea:hover {
-  cursor: n-resize;
+  cursor: text;
 }
 #contact .btn {
   margin-top: 30px;
@@ -792,7 +825,7 @@ footer .box h4 {
   font-size: 17px;
 }
 footer .box h4:hover {
-  cursor: n-resize;
+  cursor: text;
 }
 footer .box .icon i {
   width: 38px;

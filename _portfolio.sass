@@ -22,30 +22,28 @@
             //width: 340px
             // margin: 3px
             position: relative
-            .minibox
-                .icon
-                    opacity: 0
-            &:hover
-                .minibox
-                    background-color: #faca17
-                    position: absolute
-                    top: 0
+            display: flex
+            justify-content: center
+            align-items: center
+            .icon
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100%
+                position: absolute
+                top: 0
+                left: 0
+                bottom: 0
+                font-size: 60px
+                color: #ffff
+                opacity: 0
+                &:hover
+                    background-color: #ffbb00
                     opacity: 0.9
                     cursor: pointer
-                    .icon
-                        position: absolute
-                        top: 100px
-                        left: 150px
-                        font-size: 60px
-                        color: #ffff
-                        opacity: 1
-                .box-color
-                    opacity: 0.6
-                    .icon
-                        color: #ffff
-                        opacity: 1
-
-
+                    // .icon
+                    //     color: #ffff
+                    //     opacity: 1
 
     @media (min-width: 576px)
         .textbox
@@ -58,4 +56,3 @@
         .box
             .imgbox
                 width: 300px
-   
