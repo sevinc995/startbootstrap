@@ -112,7 +112,7 @@ header .menu .btn {
 }
 #welcome .box .textbox h1 {
   font-weight: 700;
-  font-size: 110px;
+  font-size: 90px;
   color: white;
   margin-top: 20px;
 }
@@ -123,7 +123,6 @@ header .menu .btn {
   color: white;
 }
 #welcome .box .btn {
-  width: 210px;
   padding: 18px 45px;
   background-color: #ffc800;
   border-radius: 7px;
@@ -135,55 +134,18 @@ header .menu .btn {
 }
 #welcome .box .btn h3 {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
 }
 #welcome .box .btn h3:hover {
   cursor: pointer;
 }
-@media (max-width: 300px) {
+@media (max-width: 768px) {
   #welcome .box .textbox h1 {
-    font-size: 40px;
+    font-size: 70px;
   }
   #welcome .box .textbox h2 {
-    margin-top: 120px;
-    font-size: 20px;
-  }
-}
-@media (min-width: 300px) {
-  #welcome .box .textbox h1 {
-    font-size: 40px;
-  }
-  #welcome .box .textbox h2 {
-    margin-top: 120px;
-    font-size: 20px;
-  }
-}
-@media (min-width: 576px) {
-  #welcome .box .textbox h1 {
-    font-size: 50px;
-  }
-  #welcome .box .textbox h2 {
-    margin-top: 130px;
-    font-size: 30px;
-  }
-}
-@media (min-width: 768px) {
-  #welcome .box .textbox h1 {
-    font-size: 80px;
-  }
-  #welcome .box .textbox h2 {
-    margin-top: 130px;
     font-size: 35px;
-  }
-}
-@media (min-width: 992px) {
-  #welcome .box .textbox h1 {
-    font-size: 110px;
-  }
-  #welcome .box .textbox h2 {
-    margin-top: 135px;
-    font-size: 45px;
   }
 }
 
@@ -228,12 +190,15 @@ header .menu .btn {
   color: white;
   font-size: 60px;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   #services .textbox h1 {
-    font-size: 34px;
+    font-size: 45px;
   }
-  #services .box h2 {
-    font-size: 19px;
+  #services .textbox h2 {
+    font-size: 25px;
+  }
+  #services .textbox h3 {
+    font-size: 22px;
   }
 }
 
@@ -282,14 +247,16 @@ header .menu .btn {
   opacity: 0.9;
   cursor: pointer;
 }
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   #portfolio .textbox h1 {
-    font-size: 35px;
+    font-size: 40px;
   }
-}
-@media (max-width: 768px) {
-  #portfolio .box .imgbox {
-    width: 300px;
+  #portfolio .textbox h3 {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+  #portfolio .box {
+    margin-bottom: 50px;
   }
 }
 
@@ -677,6 +644,11 @@ header .menu .btn {
 #team .textbox h3 {
   text-align: center;
 }
+@media (max-width: 768px) {
+  #team .textbox h3 {
+    font-size: 22px;
+  }
+}
 
 #microsoft .box {
   padding: 80px 0;
@@ -698,10 +670,10 @@ header .menu .btn {
   padding: 90px 0;
 }
 #contact h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
   color: white;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 #contact h3 {
   font-size: 20px;
@@ -713,104 +685,37 @@ header .menu .btn {
   flex-direction: column;
 }
 #contact .box input {
-  width: 550px;
-  height: 65px;
   border: 0.5px solid #a2a8ad;
   border-radius: 5px;
   margin-bottom: 20px;
-  padding: 10px 20px;
+  padding: 19px 20px;
+  font-weight: 700;
 }
 #contact .box textarea {
-  width: 550px;
-  height: 235px;
   border: 0.5px solid #a2a8ad;
   border-radius: 5px;
   padding: 20px 20px;
+  font-weight: 700;
 }
 #contact .box textarea:hover {
   cursor: text;
 }
 #contact .btn {
   margin-top: 30px;
-  width: 220px;
-  border-radius: 5px;
-  padding: 18px 40px;
+  border-radius: 7px;
+  padding: 15px 35px;
   background-color: #b28f0e;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 #contact .btn h4 {
   color: #b2b3b3;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 700;
 }
-@media (min-width: 300px) {
-  #contact .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #contact .box input {
-    width: 250px;
-  }
-  #contact .box textarea {
-    width: 250px;
-    height: 135px;
-  }
-}
-@media (min-width: 576px) {
-  #contact .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #contact .box input {
-    width: 300px;
-  }
-  #contact .box textarea {
-    width: 300px;
-    height: 160px;
-  }
-}
-@media (min-width: 768px) {
-  #contact .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #contact .box input {
-    width: 300px;
-  }
-  #contact .box textarea {
-    width: 300px;
-    height: 235px;
-  }
-}
-@media (min-width: 992px) {
-  #contact .box {
-    display: flex;
-    flex-direction: column;
-  }
-  #contact .box input {
-    width: 430px;
-    height: 65px;
-  }
-  #contact .box textarea {
-    width: 430px;
-    height: 235px;
-  }
-}
-@media (min-width: 1200px) {
-  #contact .box {
-    display: flex;
-    flex-direction: column;
-  }
-  #contact .box input {
-    width: 550px;
-    height: 65px;
-  }
-  #contact .box textarea {
-    width: 550px;
-    height: 235px;
+@media (max-width: 576px) {
+  #contact .textbox {
+    font-size: 45px;
+    font-size: 18px;
   }
 }
 
@@ -825,6 +730,9 @@ footer .box {
 footer .box h3 {
   padding: 25px;
   font-size: 17px;
+}
+footer .box h3 span {
+  margin: 0 10px;
 }
 footer .box h3:hover {
   cursor: pointer;
@@ -849,4 +757,9 @@ footer .box .icon i {
 footer .box .icon i:hover {
   cursor: pointer;
   background-color: #424649;
+}
+@media (max-width: 992px) {
+  footer h3 {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
