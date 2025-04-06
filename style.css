@@ -104,7 +104,7 @@ header .menu .btn {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 50px;
+  height: 800px;
 }
 #welcome .box .textbox {
   display: flex;
@@ -112,7 +112,7 @@ header .menu .btn {
 }
 #welcome .box .textbox h1 {
   font-weight: 700;
-  font-size: 90px;
+  font-size: 100px;
   color: white;
   margin-top: 20px;
 }
@@ -146,6 +146,20 @@ header .menu .btn {
   }
   #welcome .box .textbox h2 {
     font-size: 35px;
+  }
+  #welcome .box .btn {
+    padding: 15px 30px;
+  }
+}
+@media (max-width: 576px) {
+  #welcome .box .textbox h1 {
+    font-size: 60px;
+  }
+  #welcome .box .textbox h2 {
+    font-size: 30px;
+  }
+  #welcome .box .btn {
+    padding: 13px 27px;
   }
 }
 
@@ -328,7 +342,7 @@ header .menu .btn {
 }
 @media (max-width: 992px) {
   #about h1 {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 700;
     margin-bottom: 20px;
   }

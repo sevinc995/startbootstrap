@@ -7,13 +7,13 @@
         flex-direction: column
         align-items: center
         justify-content: center
-        margin: 50px
+        height: 800px
         .textbox
             display: flex
             flex-direction: column
             h1
                 font-weight: 700
-                font-size: 90px
+                font-size: 100px
                 color: #ffff
                 margin-top: 20px
             h2
@@ -43,4 +43,15 @@
                     font-size: 70px
                 h2 
                     font-size: 35px
+            .btn
+                padding: 15px 30px
         
+    @media (max-width: 576px)
+        .box
+            .textbox
+                h1 
+                    font-size: 60px
+                h2 
+                    font-size: 30px
+            .btn
+                padding: 13px 27px
