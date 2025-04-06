@@ -125,7 +125,7 @@
                     flex-direction: row
                     .textbox
                         margin-top: 20px
-                        width: 180px
+                        width: 75%
                         h2
                             font-size: 25px
                             font-weight: 700
@@ -169,7 +169,7 @@
                     position: relative
                     padding: 20px
                     .textbox
-                        width: 180px
+                        max-width: 400px
                         h2
                             font-size: 20px
                             text-align: start
@@ -190,15 +190,62 @@
                 .left
                     display: flex
                     flex-direction: row-reverse
-                    transform: translate(-70px, 0px)
+                    transform: translate(-50px, 0px)
                     h2 
-                        margin-left: -30px
+                        margin-left: -20px
                     p 
-                        margin-left: -30px
-                
+                        margin-left: -20px
                 .right
-                    transform: translate(-70px, 0px)
+                    transform: translate(-50px, 0px)
                     h2 
-                        margin-left: -20px
+                        margin-left: -10px
                     p 
-                        margin-left: -20px
+                        margin-left: -10px
+    @media (max-width: 310px)
+        h1
+            font-size: 30px
+        h3
+            font-size: 18px
+        ul
+            li
+                position: relative
+                display: flex
+                justify-content: start
+                .box
+                    position: relative
+                    padding: 20px
+                    .textbox
+                        width: 180px
+                        h2
+                            font-size: 20px
+                            text-align: start
+                        p
+                            font-size: 18px
+                            line-height: 1.2
+                            text-align: start
+                    .imgbox
+                        width: 65px
+                        height: 65px
+                        //margin-left: -20px
+                .minibox
+                    width: 65px
+                    height: 65px
+                    margin-left: -20px
+                    h4
+                        font-size: 13px
+                        font-weight: 600
+                .left
+                    display: flex
+                    flex-direction: row-reverse
+                    transform: translate(-60px, 0px)
+                    // h2 
+                    //     margin-left: -20px
+                    // p 
+                    //     margin-left: -20px
+                .right
+                    transform: translate(-60px, 0px)
+                    // h2 
+                    //     margin-left: -20px
+                    // p 
+                    //     margin-left: -20px
+

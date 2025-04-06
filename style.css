@@ -434,7 +434,7 @@ header .menu .btn {
   }
   #about ul li .box .textbox {
     margin-top: 20px;
-    width: 180px;
+    width: 75%;
   }
   #about ul li .box .textbox h2 {
     font-size: 25px;
@@ -493,7 +493,7 @@ header .menu .btn {
     padding: 20px;
   }
   #about ul li .box .textbox {
-    width: 180px;
+    max-width: 400px;
   }
   #about ul li .box .textbox h2 {
     font-size: 20px;
@@ -520,22 +520,72 @@ header .menu .btn {
   #about ul li .left {
     display: flex;
     flex-direction: row-reverse;
-    transform: translate(-70px, 0px);
+    transform: translate(-50px, 0px);
   }
   #about ul li .left h2 {
-    margin-left: -30px;
+    margin-left: -20px;
   }
   #about ul li .left p {
-    margin-left: -30px;
+    margin-left: -20px;
   }
   #about ul li .right {
-    transform: translate(-70px, 0px);
+    transform: translate(-50px, 0px);
   }
   #about ul li .right h2 {
-    margin-left: -20px;
+    margin-left: -10px;
   }
   #about ul li .right p {
+    margin-left: -10px;
+  }
+}
+@media (max-width: 310px) {
+  #about h1 {
+    font-size: 30px;
+  }
+  #about h3 {
+    font-size: 18px;
+  }
+  #about ul li {
+    position: relative;
+    display: flex;
+    justify-content: start;
+  }
+  #about ul li .box {
+    position: relative;
+    padding: 20px;
+  }
+  #about ul li .box .textbox {
+    width: 180px;
+  }
+  #about ul li .box .textbox h2 {
+    font-size: 20px;
+    text-align: start;
+  }
+  #about ul li .box .textbox p {
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: start;
+  }
+  #about ul li .box .imgbox {
+    width: 65px;
+    height: 65px;
+  }
+  #about ul li .minibox {
+    width: 65px;
+    height: 65px;
     margin-left: -20px;
+  }
+  #about ul li .minibox h4 {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  #about ul li .left {
+    display: flex;
+    flex-direction: row-reverse;
+    transform: translate(-60px, 0px);
+  }
+  #about ul li .right {
+    transform: translate(-60px, 0px);
   }
 }
 
