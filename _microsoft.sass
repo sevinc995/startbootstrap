@@ -1,12 +1,27 @@
 #microsoft
+    padding: 60px 0
     .box
-        padding: 80px 0
+        //padding: 0 50px
         display: flex
         justify-content: space-around
         flex-direction: row
         .imgbox
-            width: 170px
+            width: 120px
             height: 50px
+        .microsoft
+            width: 200px
+        .ibm
+            width: 100px
         img
             &:hover
                 cursor: pointer
+
+    @media (max-width: 768px)
+        .box
+            .imgbox
+                margin-top: 30px
+
+    @media (max-width: 576px)
+        .box
+            .imgbox
+                margin-top: 50px
