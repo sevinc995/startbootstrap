@@ -493,9 +493,6 @@ header .menu .btn {
     position: relative;
     padding: 10px 20px;
   }
-  #about ul li .box .textbox {
-    max-width: 400px;
-  }
   #about ul li .box .textbox h2 {
     font-size: 20px;
     text-align: start;
@@ -558,9 +555,6 @@ header .menu .btn {
     position: relative;
     padding: 20px;
   }
-  #about ul li .box .textbox {
-    width: 180px;
-  }
   #about ul li .box .textbox h2 {
     font-size: 20px;
     text-align: start;
@@ -591,8 +585,20 @@ header .menu .btn {
     flex-direction: row-reverse;
     transform: translate(-60px, 0px);
   }
+  #about ul li .left h2 {
+    margin-left: -20px;
+  }
+  #about ul li .left p {
+    margin-left: -20px;
+  }
   #about ul li .right {
     transform: translate(-60px, 0px);
+  }
+  #about ul li .right h2 {
+    margin-left: -20px;
+  }
+  #about ul li .right p {
+    margin-left: -20px;
   }
 }
 
