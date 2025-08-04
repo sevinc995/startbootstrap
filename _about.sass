@@ -5,9 +5,9 @@
         h1
             font-size: 60px
             font-weight: 700
-            margin-bottom: 10px 
+            margin-bottom: 10px
             cursor: text
-        h3 
+        h3
             font-size: 20px
             color: #828080
             cursor: text
@@ -17,7 +17,7 @@
         margin: 0 0 100px 100px
         .textbox
             width: 400px
-            margin: 0 20px 
+            margin: 0 20px
             text-align: end
             h2,h4
                 font-size: 30px
@@ -43,10 +43,86 @@
     .minibox
         display: flex
         justify-content: center
+        align-items: center
         width: 160px
         height: 160px
         border-radius: 200px
         background-color: #ffc800
         border: 7px solid #ded8d8
-        
-        
+        h4
+            font-size: 20px
+            color: #ffff
+            cursor: text
+            font-weight: 700
+            line-height: 1.3
+            text-align: center
+
+    @media screen and (max-width: 992px )
+        .box
+            margin: 0 0 100px 0
+            align-items: flex-start
+            .textbox
+                width: 190px
+            .imgbox
+                width: 150px
+                height: 150px
+    @media screen and (max-width: 768px)
+        .text-center
+            h1
+                font-size: 55px
+            h3
+                font-size: 18px
+        .box
+            align-items: flex-start
+            flex-direction: row-reverse
+            margin: 0 0 70px 0
+            .textbox
+                width: 400px
+                text-align: start
+            .imgbox
+                width: 140px
+                height: auto
+                margin: 0
+        .right
+            margin: 0 0 70px 0
+            flex-direction: row
+            .textbox
+                text-align: start
+        .story
+            justify-content: flex-start
+            .minibox
+                width: 140px
+                height: 140px
+                padding: 0 30px
+
+    @media screen and (max-width: 576px)
+        .text-center
+            h1
+                font-size: 50px
+            h3
+                font-size: 18px
+        .box
+            .imgbox
+                width: 100px
+                height: 100px
+            .textbox
+                h2
+                    font-size: 25px
+                p
+                    font-size: 18px
+        .story
+            .minibox
+                width: 90px
+                height: 90px
+                padding: 0 15px
+                h4
+                    font-size: 14px
+    @media screen and (max-width: 310px)
+        .story
+            .minibox
+                width: 50px
+                height: 50px
+                padding: 0 5px
+                h4 
+                    font-size: 9px
+
